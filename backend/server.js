@@ -4,6 +4,8 @@ const { Server } = require('socket.io');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const dashboardRoutes = require('./routes/dashboardRoutes');
+const bcrypt = require('bcryptjs');
+
 
 require('dotenv').config();
 const connectDB = require('./config/db');
